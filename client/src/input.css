@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.linkMenu{
+    @apply px-5 py-2 text-xl text-nowrap hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black;
+}
+.mobileMenu{
+    @apply p-4 border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600;
+}
