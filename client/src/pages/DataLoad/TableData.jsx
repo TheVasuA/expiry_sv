@@ -74,13 +74,11 @@ const downloadExcel = (pesodata) => {
           const [reminderDate, setReminderDate] = useState('');
   
           const handleSetReminder = async(e,index) => {
-            const newReminders = [...pesodata];
+            const newReminders = {id:row.original.id,setRemainder:e.target.value}
             console.log(newReminders)
-            pesodata[index].setRemainder = e.target.value;
-            setPesodata(newReminders);
             setReminderDate(e.target.value);
             try {
-              await axios.post('https://chartap.com/api/pesotank', newReminders[index]);
+              await axios.post('https://chartap.com/api/updatepesotank', newReminders);
               alert('Reminder set successfully!');
             } catch (error) {
               console.error('Error setting reminder:', error);
