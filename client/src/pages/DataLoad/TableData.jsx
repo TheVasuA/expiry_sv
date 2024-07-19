@@ -1,8 +1,7 @@
 import React, {useState,useEffect, useMemo } from 'react';
 import { useTable, usePagination, useSortBy } from 'react-table';
 import axios from 'axios'
-import dayjs from 'dayjs';
-import { formatDistanceToNow,  addDays,differenceInDays } from 'date-fns';
+import { formatDistanceToNow,  differenceInDays } from 'date-fns';
 
 const TableData = () => {
   const [pesodata, setPesodata] = useState([]);
@@ -68,7 +67,7 @@ const downloadExcel = (pesodata) => {
 
 
        {
-        Header: 'Set Reminder',
+        Header: 'Set Remainder',
         accessor: 'setRemainder',
         Cell: ({ row,value }) => {
           const [reminderDate, setReminderDate] = useState('');
