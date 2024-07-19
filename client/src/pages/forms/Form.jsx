@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
-import FormTank from './forms/FormTank'
-import FormTwo from './forms/FormTwo'
-import FormFour from './forms/FormFour';
+import FormTank from './FormTank'
+import FormTwo from './FormTwo'
+import FormFour from './FormFour';
 
 const FormCollection = () => {
     const [selectedButton, setSelectedButton] = useState(null);

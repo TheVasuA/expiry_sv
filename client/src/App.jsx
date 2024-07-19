@@ -6,7 +6,7 @@ import Vehicle from './pages/Vehicle';
 import PesoTank from './pages/PesoTank';
 import Login from './pages/Login';
 import Policy from './pages/Policy';
-import FormCollection from './pages/Form';
+import FormCollection from './pages/forms/Form';
 import General from './pages/General';
 
 

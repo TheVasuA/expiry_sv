@@ -8,7 +8,7 @@ const Formvisible = ({ onAuthorize }) => {
   const handleKeyCheck = (e) => {
     e.preventDefault();
     const enteredKey = e.target.elements.secretKey.value;
-    const correctKey = "sv@2024"; // Set your secret key here
+    const correctKey = "1234"; // Set your secret key here
 
     if (enteredKey === correctKey) {
       setFormVisible(true);

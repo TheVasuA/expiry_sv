@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import Formvisible from '../pages/Formvisible';
+import Formvisible from '../pages/forms/Formvisible';
 
 const Navbar = ({ onAuthorize }) => {
 
@@ -28,11 +28,11 @@ const Navbar = ({ onAuthorize }) => {
             <li className='linkMenu'><Link to="/policy">Policy</Link></li>
         
 <Formvisible  onAuthorize ={ onAuthorize }/>
-            <li>
+            {/* <li>
             <Link to="/login">
             <button className='px-5 py-2 text-xl text-nowrap hover:bg-[rgb(16,80,60)] rounded-xl m-2 cursor-pointer duration-300 hover:text-black text-[#211951] bg-[#15F5BA]'>Login</button>
             </Link>
-        </li>
+        </li> */}
           </ul>
         </nav>
 
@@ -51,7 +51,7 @@ const Navbar = ({ onAuthorize }) => {
         }
       >
         {/* Mobile Logo */}
-        <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>INFINITI</h1>
+        <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4 z-100'>INFINITI</h1>
 
         {/* Mobile Navigation Items */}
         <li className='mobileMenu'><Link to="/">Homes</Link></li>
