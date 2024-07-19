@@ -6,7 +6,7 @@ import { formatDistanceToNow,  addDays,differenceInDays } from 'date-fns';
 
 const TableData = () => {
   const [pesodata, setPesodata] = useState([]);
- 
+ console.log(pesodata)
   const currentDate = new Date();
   
 const downloadExcel = (pesodata) => {
@@ -88,7 +88,8 @@ const downloadExcel = (pesodata) => {
   
           return (
             <div>
-<input type="date"  value={new Date(value).getFullYear()}
+              <div>{new Date(value).toLocaleDateString()}</div>
+<input type="date"  value={new Date(value).toLocaleDateString()}
                         onChange={(e) => handleSetReminder(e, row.index)} />
               {reminderDate && (
                 <div className="mt-1 text-xs text-gray-500">
@@ -108,7 +109,7 @@ const downloadExcel = (pesodata) => {
     getTableProps,
     getTableBodyProps,
     headerGroups,
-    rorws,
+    rows,
     prepareRow,
     page, // Instead of using 'rows', we'll use page,
     canPreviousPage,

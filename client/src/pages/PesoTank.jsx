@@ -1,5 +1,6 @@
 import React from 'react'
-import MyTable from './DataLoad/dataPesotank'
+
+import TableData from './DataLoad/TableData'
 
 
 const PesoTank = () => {
@@ -8,7 +9,7 @@ const PesoTank = () => {
     <div>
        <div className="p-6 bg-blue-100 rounded shadow-md min-h-screen">
 
-           <MyTable/>
+       <TableData/>
            
           </div>
     </div>
